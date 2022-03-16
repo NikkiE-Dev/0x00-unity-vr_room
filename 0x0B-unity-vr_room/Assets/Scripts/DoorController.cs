@@ -5,42 +5,6 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    [SerializeField] private Animator myDoor = null;
-    [SerializeField] private bool isOpen = false;
-
-    void Start () {
-        myDoor = GetComponent<Animator>();
-    }
-    void OnTriggerEnter(Collider other)
-    {
-        myDoor.SetBool("character_nearby", true);
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        myDoor.SetBool("character_nearby", false);
-    }
-
-//     private bool IsOpenDoorActive
-//     {
-//         get
-//         {
-//             return open_door.activeInHierarchy;
-//         }
-//     }
-//     void Update()
-//     {
-//         if (isInTrigger && IsOpenDoorActive)
-//         {
-//             if (Input.GetKeyDown(KeyCode.E))
-//             {
-//                 isOpen = !isOpen;
-//                 _animator.SetBool("isOpen", isOpen);
-//             }
-//         }
-    // }
-=======
     [SerializeField] private GameObject open_door = null;
     [SerializeField] private bool isInTrigger = false;
     public Animator _animator;
@@ -74,6 +38,7 @@ public class DoorController : MonoBehaviour
     }
     // Update is called once per frame
     // If player is in trigger area and bool for door is active, the antimation plays
+    
     void Update()
     {
         if (isInTrigger && IsOpenDoorActive)
@@ -85,5 +50,4 @@ public class DoorController : MonoBehaviour
             }
         }
     }
->>>>>>> Stashed changes
 }
