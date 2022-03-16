@@ -6,7 +6,6 @@ public class CameraController : MonoBehaviour
 {
 
     public GameObject camera;
-    // public float speed = 3;
     float rotationX = 0.0f;
     float rotationY = 0.0f;
     public float sensitivity = 15.0f;
